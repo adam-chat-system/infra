@@ -4,19 +4,19 @@ Kubernetes configuration for the chat-system microservices.
 
 ## Technologies
 
-- Kubernetes
-- Minikube
-- Docker
-- RabbitMQ
+* Kubernetes
+* Minikube
+* Docker
+* RabbitMQ
 
 ## Services
 
-- BFF
-- Auth Service
-- User Service
-- Message Service
-- Bot Service
-- RabbitMQ
+* BFF
+* Auth Service
+* User Service
+* Message Service
+* Bot Service
+* RabbitMQ
 
 ## Run
 
@@ -26,3 +26,12 @@ minikube start
 kubectl apply -f k8s/
 
 minikube service bff -n chatapp
+```
+
+## Verify
+
+```bash
+kubectl get pods -n chatapp
+
+kubectl get svc -n chatapp
+```
